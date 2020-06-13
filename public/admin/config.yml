@@ -1,6 +1,7 @@
 backend:
-  name: test-repo
+  name: git-gateway
   branch: master
+publish_mode: editorial_workflow
 media_folder: "public/img/uploads"
 public_folder: "img/uploads"
 collections:
@@ -20,8 +21,8 @@ collections:
             fields:
               - { label: "Name", name: "name", widget: "string"}
               - { label: "Description", name: "description", widget: "text"}
-  - label: "Posts"
-    name: "posts"
+  - name: "posts"
+    label: "Posts"
     folder: "content/posts"
     create: true
     slug: "{{slug}}"
@@ -34,6 +35,6 @@ collections:
         name: "tags"
         widget: "list"
         fields: {label: "Name", name: "name", widget: "string", default: "tag"}
-      - {label: "Cover Image", name: "cover_image", widget: "image", required: true}
+      - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
