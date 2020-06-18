@@ -5,6 +5,7 @@ published: false
 tags:
   - USA
   - NY
+cover_image: /images/uploads/james-padolsey-tvpvrobv0f4-unsplash.jpg
 description: New York City (NYC), often called New York (NY), is the most
   populous city in the United States. With an estimated 2019 population of
   8,336,817 distributed over about 302.6 square miles (784 km2), New York is
