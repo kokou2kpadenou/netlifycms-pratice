@@ -7,23 +7,12 @@ tags:
   - TOGO
   - Ouest Africa
 cover_image: /images/uploads/fan-yang-r4u5fdhxaga-unsplash.jpg
-description: "**Lomé** is the
-  [capital](https://en.wikipedia.org/wiki/Capital_(political) \"Capital
-  (political)\") and largest city of [Togo](https://en.wikipedia.org/wiki/Togo
-  \"Togo\"). It has an urban population of
-  837,437[\\[2]](https://en.wikipedia.org/wiki/Lom%C3%A9#cite_note-Census-2)
-  while there were 1,477,660 permanent residents in its [metropolitan
-  area](https://en.wikipedia.org/wiki/Metropolitan_area \"Metropolitan area\")
-  as of the 2010
-  census.[\\[2]](https://en.wikipedia.org/wiki/Lom%C3%A9#cite_note-Census-2)
-  Located on the [Gulf of Guinea](https://en.wikipedia.org/wiki/Gulf_of_Guinea
-  \"Gulf of Guinea\"), Lomé is the country's administrative and industrial
-  center, which includes an oil refinery, and its chief port, where it exports
-  [coffee](https://en.wikipedia.org/wiki/Coffee \"Coffee\"),
-  [cocoa](https://en.wikipedia.org/wiki/Cocoa_bean \"Cocoa bean\"),
-  [copra](https://en.wikipedia.org/wiki/Copra \"Copra\"), and [oil
-  palm](https://en.wikipedia.org/wiki/Elaeis_guineensis \"Elaeis guineensis\")
-  kernels."
+description: "**Lomé** is the capital and largest city of Togo. It has an urban
+  population of 837,437 while there were 1,477,660 permanent residents in its
+  metropolitan area as of the 2010 census. Located on the Gulf of Guinea, Lomé
+  is the country's administrative and industrial center, which includes an oil
+  refinery, and its chief port, where it exports coffee, cocoa, copra, and oil
+  palm kernels."
 ---
 ## History[[edit](https://en.wikipedia.org/w/index.php?title=Lom%C3%A9&action=edit&section=1 "Edit section: History")]
 
