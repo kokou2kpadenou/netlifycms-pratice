@@ -1,5 +1,5 @@
 ---
-title: Lome
+title: Lome 🌍
 date: 2020-06-18T16:01:32.143Z
 published: true
 tags:
