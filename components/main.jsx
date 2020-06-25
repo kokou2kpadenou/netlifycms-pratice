@@ -12,7 +12,8 @@ const Main = ({ children, post = false }) => {
             {children}
             <style jsx>{`
                 main {
-                    margin: 2rem;
+                    padding: 2rem;
+                    background-color: #f6f0ff;
                 }
             `}</style>
         </main>
