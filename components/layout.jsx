@@ -17,6 +17,7 @@ const Layout = ({ children, post }) => {
                     name="description"
                     content="Netlify CMS demo with nextjs."
                 />
+                <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
             </Head>
             <Header />
             <Main post={post}>{children}</Main>
