@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Layout from "../components/layout";
+import PostCard from "../components/postCard";
 import { getAllPosts } from "../lib/api";
 
 export async function getStaticProps() {
@@ -18,61 +19,20 @@ export async function getStaticProps() {
 function Allposts({ posts }) {
     //
     return (
-        <ul>
-            {posts.map((post, id) => (
-                <li key={id}>
-                    <Link href="/posts/[slug]" as={`/posts/${post.slug}`}>
-                        <a>
-                            {post.cover_image && (
-                                <div
-                                    className="cover_img"
-                                    style={{
-                                        backgroundColor: "red",
-                                        backgroundImage: `url("${post.cover_image}")`
-                                    }}
-                                ></div>
-                            )}
-                            <div className="details">
-                                <h1>{post.title}</h1>
-                                <div>{post.description}</div>
-                            </div>
-                        </a>
-                    </Link>
-                </li>
-            ))}
+        <Layout>
+            <ul className="posts">
+                {posts.map((post, id) => (
+                    <PostCard key={id} post={post} />
+                ))}
+            </ul>
             <style jsx>{`
                 //
-                ul {
+                .posts {
                     list-style: none;
-                }
-
-                li {
-                    max-width: 38rem;
-                    margin: 2rem auto;
-                    //border-radius: 10px;
-                    border: 1px solid #000;
-                }
-                a {
-                    text-decoration: none;
-                    display: block;
-                }
-                a:link,
-                a:visited {
-                    color: #000;
-                }
-                .cover_img {
-                    height: 160px;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    //border-top-right-radius: 10px;
-                    //border-top-left-radius: 10px;
-                }
-                .details {
-                    padding: 2rem;
+                    margin: 10px;
                 }
             `}</style>
-        </ul>
+        </Layout>
     );
 }
 
