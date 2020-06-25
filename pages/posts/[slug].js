@@ -1,5 +1,5 @@
-import { useRouter } from "next/router";
-import ErrorPage from "next/error";
+import Layout from "../../components/layout";
+import PostHead from "../../components/postHead";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
 
@@ -30,31 +30,26 @@ export async function getStaticProps({ params }) {
 }
 
 function Post({ post }) {
-    const router = useRouter();
-
-    /*    if (!router.isFallback && !result) {
-        return <ErrorPage statusCode={404} />;
-    }*/
-
-    console.log(post.tags.split(","));
     return (
-        <div>
-            {post.cover_image && (
-                <img src={post.cover_image} alt="cover image" />
-            )}
-            <h1>{post.title}</h1>
-            <div>
-                <span>{post.published}</span>
-                <span>{post.date}</span>
-                <p>{post.description}</p>
-                <ul>
-                    {post.tags.split(",").map((tag, id) => (
-                        <li key={id}>{tag}</li>
-                    ))}
-                </ul>
+        <Layout post={true}>
+            <div className="post">
+                <PostHead post={post} />
+                <div
+                    className="content"
+                    dangerouslySetInnerHTML={{ __html: post.content }}
+                />
             </div>
-            <div dangerouslySetInnerHTML={{ __html: post.content }} />
-        </div>
+            <style jsx>{`
+                .post {
+                    background-color: #fff;
+                    border-radius: 10px;
+                }
+                .content {
+                    padding: 2rem;
+                    border-top: 1px solid #000;
+                }
+            `}</style>
+        </Layout>
     );
 }
 export default Post;
