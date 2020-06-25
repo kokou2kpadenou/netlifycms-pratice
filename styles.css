@@ -3,3 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.content p,
+.content ul,
+.content ol,
+.content blockquote {
+    margin: 2rem 0;
+    line-height: 1.6;
+}
+.content ul,
+.content ol {
+    margin: 0 0 0 2rem;
+}
